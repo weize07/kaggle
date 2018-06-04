@@ -97,8 +97,8 @@ def main():
         parser.print_help()
         exit(1)
     classifier = train(args.train)
-    result = test(args.test, classifier)
-    for item in result:
+    # result = test(args.test, classifier)
+    # for item in result:
         print(','.join(item))
 
 if __name__ == '__main__':
